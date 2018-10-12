@@ -4,7 +4,7 @@
 });*/
 
 $(document).ready(function(){
-	$('#page-loader').fadeOut(1000);
+	$('#page-loader').fadeOut(1500);
 })
 
 $(document).on("click","#btn_form",function(){
