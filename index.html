@@ -41,7 +41,7 @@
       div#social_networks{
         position: fixed;
         bottom: 100px;
-        left:  10px;
+        left:  30px;
         width: auto;
         height: auto;
         z-index: 10;
@@ -67,6 +67,9 @@
         margin-left: 100px;margin-right: 100px;font-size: 20px;font-weight: bolder;
 
       }
+      .title_paragraph{
+        margin-top: 250px;font-weight: bolder;
+      }
       .paragraph_collapsed{
         margin-left: 150px;margin-right: 150px;font-weight: bolder;
       }
@@ -80,7 +83,7 @@
       }
       .testimony_title{
         color: #326291;
-        font-weight: bolder;
+        
       }
       .testimony_title:hover{
         cursor: pointer;
@@ -88,6 +91,43 @@
 
       .testimony_paragraph{
         font-size: 18px;
+      }
+
+
+      video {
+        width: 100%;
+        height: 500px;
+      }
+
+      #div_main{
+        background-image: url(images/main.png);
+        height: 700px;
+        background-repeat: no-repeat;
+        
+      }
+      #div_main2{
+        background-image: url(images/main2.png);
+        height: 700px;
+        background-repeat: no-repeat;
+      }
+
+      #div_main3{
+        background-image: url(images/main3.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+      }
+
+      #div_main4{
+        background-image: url(images/main4.png);
+        height: 500px;
+        background-repeat: no-repeat;
+      }
+
+      #div_main5{
+        background-image: url(images/main5.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: auto;
       }
 
     </style>
@@ -162,28 +202,28 @@
     </div>
 
     <div id="social_networks">
-      <img src="images/face_icon.png" class="rounded-circle mx-auto d-block" style="width: 50px;height: 50px;">
+      <img src="images/face.png" class="rounded-circle mx-auto d-block" style="width: 50px;height: 50px;">
       <br>
-      <img src="images/instagram_icon.png" class="rounded-circle mx-auto d-block" style="width: 50px;height: 50px;">
+      <img src="images/instagram.png" class="rounded-circle mx-auto d-block" style="width: 50px;height: 50px;">
     </div>
 
     
-    <a href="##" id="btn_form"><img src="images/face_icon.png" class="rounded-circle mx-auto d-block" style="width: 50px;height: 50px;"></a>
+    <a href="##" id="btn_form"><img src="images/signo.png" class="rounded-circle mx-auto d-block" style="width: 80px;height: 80px;"></a>
     <br>
       
     
 
-    <header class=" text-white background-main" id="main">
+    <header class=" text-white background-main">
       <div class="container text-center" style="height:auto;">
         <!--<h1>Welcome to Scrolling Nav</h1>
         <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>-->
         <div class="row" >
           <div class="col-sm-12">
             <div class="container">
-              <div class="row" style="background-image: url(images/main.png);">
+              <div class="row" id="div_main">
                 <div class="col-sm-12" style="background-color: rgba(50, 98, 145,0.5);">
                   <br>
-                  <img src="images/logo.png" style="width:auto;height: 600px;" id="logo_main">
+                  <img src="images/logo.png" style="width:auto;height: 500px;" id="logo_main">
 
                   <h1 class="bold_word title" >INSCRIPCIONES<br>ABIERTAS TODO EL AÑO</h1>
                 </div>
@@ -195,12 +235,12 @@
         <div class="row" >
           <div class="col-sm-12" >
             <div class="container">
-              <div class="row" style="background-image: url(images/main2.png);">
-                <div class="col-sm-12" style="background-color: rgba(143, 187, 78,0.5);height: 700px;" >
+              <div class="row"  id="div_main2">
+                <div class="col-sm-12" style="background-color: rgba(143, 187, 78,0.5)" >
 
-                  <h1 class="text-center" style="margin-top: 250px;font-weight: bolder;">ESCUELA ACTIVA</h1>
+                  <h1 class="text-center title_paragraph" >ESCUELA ACTIVA</h1>
                   <h3 style="font-weight: bolder;">La primera y única escuela activa</h3>
-                  <p class="paragraph">La Escuela Activa empieza a surgir en la primera década del siglo xx, su finalidad es formar personas con sentido democrático desarrollar un espíri-tu crítico y de cooperación. El tipo de aprendizaje es comprensivo</p>
+                  <p class="paragraph">La Escuela Activa empieza a surgir en la primera década del siglo xx, su finalidad es formar personas con sentido democrático desarrollar un espíri-tu crítico y de cooperación. El tipo de aprendizaje es comprensivo crítico y multidisciplinario y en cuestión de enseñanza se parte del respeto al alumno, planteando el proceso de enseñanza – aprendizaje a partir de las necesidades e interés de éste.</p>
                 </div>
               </div>
             </div>
@@ -210,10 +250,9 @@
         <div class="row" >
           <div class="col-sm-12" >
             <div class="container">
-              <div class="row" style="background-image: url(images/main3.jpg);">
-                <div class="col-sm-12" style="background-color: rgba(50, 98, 145,0.5);height: 500px;" >
-
-                  <h1 class="text-center" style="margin-top: 250px;font-weight: bolder;">EDUCACIÓN INCLUSIVA</h1>
+              <div class="row" id="div_main3">
+                <div class="col-sm-12" style="background-color: rgba(50, 98, 145,0.5);" >
+                  <h1 class="text-center title_paragraph">EDUCACIÓN INCLUSIVA</h1>
                   <h4 class="paragraph">Contamos con la infraestructura, preparación y legislación para atender niños con capacida desdiferentes.</h4>
                   
                 </div>
@@ -226,13 +265,13 @@
         <div class="row" >
           <div class="col-sm-12" >
             <div class="container">
-              <div class="row" style="background-image: url(images/main4.png);">
-                <div class="col-sm-12" style="background-color: rgba(143, 187, 78,0.5);height: 500px;" >
+              <div class="row" id="div_main4">
+                <div class="col-sm-12" style="background-color: rgba(143, 187, 78,0.5);" >
 
-                  <h1 class="text-center" style="margin-top: 250px;font-weight: bolder;">ESCUELA VERDE</h1>
+                  <h1 class="text-center title_paragraph">ESCUELA VERDE</h1>
                   
                   <p>
-                    <a  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/arrow_down.png" style="width: 60px;"></a>
+                    <a  data-toggle="collapse" href="#collapseExample"  role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/flecha3.png" style="width: 60px;" id="img_collapse" /></a>
                     
                   </p>
                   
@@ -273,12 +312,11 @@
         <div class="row" >
           <div class="col-sm-12" >
             <div class="container">
-              <div class="row" style="background-image: url(images/main5.jpg);">
-                <div class="col-sm-12" style="background-color: rgba(50, 98, 145,0.5);height: 500px;" >
+              <div class="row" id="div_main5">
+                <div class="col-sm-12" style="background-color: rgba(50, 98, 145,0.5);" >
 
-                  <h1 class="text-center" style="margin-top: 200px;font-weight: bolder;">ROBÓTICA</h1>
-                  <h4 class="paragraph">Contamos con la infraestructura, preparación y legislación para atender niños con capacida desdiferentes.</h4>
-                  
+                  <h1 class="text-center title_paragraph">ROBÓTICA</h1>
+                  <h4 class="paragraph">Ofrecemos Robótica, utilizando el material de Lego Education, somos la única escuela que cuenta con todos los niveles iniciando en Preescolar, llegando a ganar lugares importantes a nivel nacional en el WRO: World Robot Olympiad - Olimpiada Mundial de Robótica.
                 </div>
               </div>
             </div>
@@ -291,23 +329,25 @@
 
     <section>
       <div class="container">
-        <h1 class="text-center">Testimonios</h1>
+        <h1 class="text-center main_blue" style="font-weight: bold;">Testimonios</h1>
         <div class="row">
-          <div class="col-md-4 text-center">
+          <div class="col-md-6 text-center">
+            <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+            <!--<img src="images/user.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;">-->
+            <h3 class="text-center testimony_title" id="testimony_one">Linda Irais Méndez Cisneros </h3>
+            <!--<p class="text-center testimony_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque totam cumque accusantium repellendus, illum, libero reiciendis est, explicabo obcaecati asperiores suscipit eum? Perferendis ipsa odio maxime, ullam, iste vero! Quis!<p>-->
+          </div>
+          <div class="col-md-6 text-center ">
+            <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+            <!--<img src="images/user.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;">-->
+            <h3 class="text-center testimony_title" id="testimony_two">Jorge Armando Méndez Cisneros</h3>
+            <!--<p class="text-center testimony_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque totam cumque accusantium repellendus, illum, libero reiciendis est, explicabo obcaecati asperiores suscipit eum? Perferendis ipsa odio maxime, ullam, iste vero! Quis!<p>-->
+          </div>
+          <!--<div class="col-md-4 text-center">
             <img src="images/user.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;">
             <h3 class="text-center testimony_title">Carolina Gal</h3>
             <p class="text-center testimony_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque totam cumque accusantium repellendus, illum, libero reiciendis est, explicabo obcaecati asperiores suscipit eum? Perferendis ipsa odio maxime, ullam, iste vero! Quis!<p>
-          </div>
-          <div class="col-md-4 text-center ">
-            <img src="images/user.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;">
-            <h3 class="text-center testimony_title">Carolina Gal</h3>
-            <p class="text-center testimony_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque totam cumque accusantium repellendus, illum, libero reiciendis est, explicabo obcaecati asperiores suscipit eum? Perferendis ipsa odio maxime, ullam, iste vero! Quis!<p>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="images/user.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;">
-            <h3 class="text-center testimony_title">Carolina Gal</h3>
-            <p class="text-center testimony_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque totam cumque accusantium repellendus, illum, libero reiciendis est, explicabo obcaecati asperiores suscipit eum? Perferendis ipsa odio maxime, ullam, iste vero! Quis!<p>
-          </div>
+          </div>-->
         </div>
       </div>
     </section>
@@ -336,20 +376,16 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Titulo</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-12 col-md-12">
-
-                </div>
-              </div>
-            </div>
-            
+            <video width="400" controls id="video_testimonio" autoplay="" >
+              <source src="" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
           </div>
           <!--<div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

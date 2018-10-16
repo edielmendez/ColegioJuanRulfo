@@ -4,16 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
-header {
-  padding: 154px 0 100px;
-}
 
+/*
 @media (min-width: 992px) {
   header {
     padding: 156px 0 100px;
   }
 }
-
+*/
 /*
 @media (max-width: 767.98px) {
 	#form_question{
@@ -46,7 +44,13 @@ section {
   padding: 150px 0;
 }
 
+#logo_main{
+	margin-top: 80px;
+}
 
+header {
+  padding: 0px 0 100px;
+}
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
@@ -65,6 +69,7 @@ section {
 	#logo_main{
 		width: 200px !important;
 		height: 250px !important;
+		
 	}
 	.title{
 		font-size: 20px !important;
@@ -77,13 +82,33 @@ section {
 		margin-left: 0px !important;
 		margin-right: 0px !important;
 	}
+	.title_paragraph{
+		margin-top: 0px !important;
+	}
 	header{
-
-		padding-top: 0px!important;
-
+		padding: 0px!important;
 	}
 	#logo_nav{
 		width: 50px !important;
+	}
+	
+	#div_main{
+		height: auto !important;
+	}
+	
+	#div_main2{
+		height: auto !important;
+		background-color: rgba(143, 187, 78,0.5) !important;
+		background-image: none !important;
+	}
+	#div_main3{
+		height: auto !important;	
+	}
+	#div_main4{
+		height: auto !important;
+	}
+	#div_main5{
+		height: auto !important;
 	}
 }
 
@@ -104,6 +129,7 @@ section {
 	#logo_main{
 		width: 200px !important;
 		height: 250px !important;
+		
 	}
 	.title{
 		font-size: 20px !important;
@@ -116,9 +142,33 @@ section {
 		margin-left: 0px !important;
 		margin-right: 0px !important;
 	}
-	
+	.title_paragraph{
+		margin-top: 0px !important;
+	}
+	header{
+		padding: 0px!important;
+	}
 	#logo_nav{
 		width: 50px !important;
+	}
+	
+	#div_main{
+		height: auto !important;
+	}
+	
+	#div_main2{
+		height: auto !important;
+		background-color: rgba(143, 187, 78,0.5) !important;
+		background-image: none !important;
+	}
+	#div_main3{
+		height: auto !important;	
+	}
+	#div_main4{
+		height: auto !important;
+	}
+	#div_main5{
+		height: auto !important;
 	}
 }
 
