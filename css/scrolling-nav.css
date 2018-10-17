@@ -53,18 +53,26 @@ header {
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+/*
+@media (max-width: 575.98px)*/
+@media (max-width: 767.98px) {
 	#form_question{
 		display: none;
 	}
 	#btn_form{
 		display: none;
 	}
-	#form_question_sm{
-		display: show;
+	#form_sm{
+		display: block !important;
+	}
+	#item_contacto{
+		display: block !important;	
 	}
 	#social_networks{
 		display: none;
+	}
+	#social_networks_sm{
+		display: block !important;
 	}
 	#logo_main{
 		width: 200px !important;
@@ -83,7 +91,7 @@ header {
 		margin-right: 0px !important;
 	}
 	.title_paragraph{
-		margin-top: 0px !important;
+		margin-top: 30px !important;
 	}
 	header{
 		padding: 0px!important;
@@ -110,73 +118,19 @@ header {
 	#div_main5{
 		height: auto !important;
 	}
+	.nav-link{
+		font-size: 20px !important;
+	}
+
 }
 
-/*#Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) {  
-	#form_question{
-		display: none;
-	}
-	#btn_form{
-		display: none;
-	}
-	#form_question_sm{
-		display: show;
-	}
-	#social_networks{
-		display: none;
-	}
-	#logo_main{
-		width: 200px !important;
-		height: 250px !important;
-		
-	}
-	.title{
-		font-size: 20px !important;
-	}
-	.paragraph_collapsed{
-		margin-left: 0px !important;
-		margin-right: 0px !important;
-	}
-	.paragraph{
-		margin-left: 0px !important;
-		margin-right: 0px !important;
-	}
-	.title_paragraph{
-		margin-top: 0px !important;
-	}
-	header{
-		padding: 0px!important;
-	}
-	#logo_nav{
-		width: 50px !important;
-	}
-	
-	#div_main{
-		height: auto !important;
-	}
-	
-	#div_main2{
-		height: auto !important;
-		background-color: rgba(143, 187, 78,0.5) !important;
-		background-image: none !important;
-	}
-	#div_main3{
-		height: auto !important;	
-	}
-	#div_main4{
-		height: auto !important;
-	}
-	#div_main5{
-		height: auto !important;
-	}
-}
+
 
 /* Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) {  }
+/*@media (max-width: 991.98px) {  }*/
 
 /* Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) {  }
+/*@media (max-width: 1199.98px) {  }*/
 
 
 

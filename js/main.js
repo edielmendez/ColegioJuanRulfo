@@ -5,6 +5,9 @@
 
 $(document).ready(function(){
 	$('#page-loader').fadeOut(1500);
+	
+    
+
 })
 
 $(document).on("click","#btn_form",function(){
@@ -42,3 +45,8 @@ $(document).on("click","#img_collapse",function(e){
          
 })
 
+
+$(document).on("click", "#item_contacto", function () {
+    $("#mainNav").collapse('hide');
+    //alert("ss");
+});
