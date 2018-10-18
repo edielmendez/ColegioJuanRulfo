@@ -1,13 +1,8 @@
 
-/*$(document).load(function(){
-    $('#page-loader').fadeOut(500);
-});*/
 
 $(document).ready(function(){
 	$('#page-loader').fadeOut(1500);
 	
-    
-
 })
 
 $(document).on("click","#btn_form",function(){
@@ -38,15 +33,17 @@ $('#modalVideo').on('hidden.bs.modal', function (e) {
   
 })
 
-$(document).on("click","#img_collapse",function(e){
-	
-	var src = ($(this).attr('src') === 'images/flecha3.png') ? 'images/flecha5.png' : 'images/flecha3.png';
-	$(this).attr('src', src);
-         
-})
 
-
-$(document).on("click", "#item_contacto", function () {
-    $("#mainNav").collapse('hide');
-    //alert("ss");
+$(".img_collapse").click(function(){
+	var src = ($(this).attr('src') === 'images/flecha3.png') ? 'images/flecha5.png' : 'images/flecha3.png';	
+    $(this).attr('src',src);   
 });
+
+$("#terminos_condiciones").click(function(){
+	$("#modalTerminos").modal();
+})
+/*
+$(document).on("click", "#item_contacto", function () {
+    //$("#mainNav").collapse('hide');
+    alert("ss");
+});*/
