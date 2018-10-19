@@ -5,52 +5,8 @@
  */
 
 
-/*
-@media (min-width: 992px) {
-  header {
-    padding: 156px 0 100px;
-  }
-}
-*/
-/*
-@media (max-width: 767.98px) {
-	#form_question{
-		display: none;
-	}
-	#form_question_sm{
-		display: show;
-	}
-	#social_networks{
-		display: none;
-	}
-	#logo_main{
-		width: 100px;
-		
 
-	}
-}
 
-@media (min-width: 767.99px) {
-	#form_question{
-		display: show;
-	}
-	#form_question_sm{
-		display: none;
-	}
-
-}*/
-
-section {
-  padding: 150px 0;
-}
-
-#logo_main{
-	margin-top: 80px;
-}
-
-header {
-  padding: 0px 0 100px;
-}
 
 /*Extra small devices (portrait phones, less than 576px)*/
 /*
@@ -120,6 +76,10 @@ header {
 	}
 	.nav-link{
 		font-size: 20px !important;
+	}
+	.images_escuela_verde{
+		width: 200px !important;
+		margin-top: 20px !important;
 	}
 
 }

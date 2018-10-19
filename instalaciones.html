@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
-
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Colegio Juan Rulfo</title>
+    <title>Instalaciones - Colegio Juan Rulfo</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" /> 
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> 
     <!-- Custom styles for this template -->
-     <!--<link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">-->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <style type="text/css">
-
       body {
         font-family: 'Montserrat';
       }
@@ -36,7 +34,8 @@
       }
 
       header {
-        padding: 0px 0 100px;
+        margin-top: 80px;
+        /*padding: 0px 0 100px;*/
       }
       
       div.fixed {
@@ -46,7 +45,7 @@
         width: 200px;
         height: auto;
         display: none;
-        background-color: white;
+        background-color: #326291;
         z-index: 10;
         margin-right: 100px;
         -webkit-border-radius: 20px 20px 20px 20px;
@@ -78,11 +77,11 @@
         color: #326291;
       }
       .paragraph{
-        margin-left: 100px;margin-right: 100px;font-size: 20px;font-weight: bolder;
+        margin-left: 100px;margin-right: 100px;font-size: 20px;
 
       }
       .title_paragraph{
-        margin-top: 250px;font-weight: bolder;
+        margin-top: 100px;font-weight: bolder;
       }
       .paragraph_collapsed{
         margin-left: 150px;margin-right: 150px;font-weight: bolder;
@@ -114,8 +113,8 @@
       }
 
       #div_main{
-        background-image: url(images/main.png);
-        height: 700px;
+        background-image: url(images/instalaciones.JPG);
+        height: 350px;
         background-repeat: no-repeat;
         
       }
@@ -160,14 +159,30 @@
       .images_escuela_verde{
         width: 300px;
       }
-
+      .anclas_main{
+        font-size: 30px;
+        color: white;
+        font-weight: bolder;
+        margin-right: 20px;
+      }
+      .anclas_main:hover{
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        font-weight: bolder;
+        margin-right: 20px;
+      }
+      span{
+        display:inline-block;
+        border-bottom:2px solid white;
+        padding-bottom:2px;
+      }
     </style>
   </head>
 
-  <body id="page-top" >
+  <body  >
 
-
-
+    <!-- Navigation -->
     <!-- Navigation -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top background-main" id="mainNav" >
       <div class="container">
@@ -184,10 +199,10 @@
         <div class="collapse navbar-collapse justify-content-center"  id="navbarResponsive">
           <ul class="navbar-nav" >
             <li class="nav-item ">
-              <a class="nav-link"  href="conocenos.html" style="color: white;font-size: 25px;font-weight: bold;" >Conocenos</a>
+              <a class="nav-link"  href="index.html" style="color: white;font-size: 25px;font-weight: bold;" >Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="instalaciones.html" style="color: white;font-size: 25px;font-weight: bold;">Instalaciones</a>
+              <a class="nav-link" href="conocenos.html" style="color: white;font-size: 25px;font-weight: bold;">Conocenos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" style="color: white;font-size: 25px;font-weight: bold;" >Admición</a>
@@ -205,9 +220,9 @@
     <div id="page-loader"><span class="preloader-interior"></span></div>
 
     <div class="fixed" id="form_question">
-      <form style="padding: 10px;">
+      <form style="padding: 10px;" >
         <div class="form-group">
-          <p class="text-center main_blue"><b>¿Tienes alguna pregunta?</b></p>
+          <p class="text-center" style="color: white;"><b>¿Tienes alguna pregunta?</b></p>
           <!--<label for="exampleInputEmail1" class="text-center">Email address</label>-->
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre" required="">
           <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
@@ -226,7 +241,7 @@
 
         <div class="form-row text-center">
           <div class="col-12">
-              <a href="" class="main_blue" style="text-decoration: none;"><b>Enviar</b></a>
+              <a href="" class="main_blue" style="text-decoration: none; color: white;"><b>Enviar</b></a>
               <!--<button type="submit" class="btn">Enviar</button>-->
           </div>
        </div>
@@ -244,170 +259,45 @@
     
     <a href="##" id="btn_form"><img src="images/signo.png" class="rounded-circle mx-auto d-block" style="width: 80px;height: 80px;"></a>
     <br>
-      
-    
 
     <header class=" text-white background-main">
-      <div class="container text-center" style="height:auto;">
-        <!--<h1>Welcome to Scrolling Nav</h1>
-        <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>-->
+      <div class="container text-center" >
         <div class="row" >
           <div class="col-sm-12">
             <div class="container">
               <div class="row" id="div_main">
                 <div class="col-sm-12" style="background-color: rgba(50, 98, 145,0.5);">
-                  <br>
-                  <img src="images/logo.png" style="width:auto;height: 500px;" id="logo_main">
-
-                  <h1 class="bold_word" >INSCRIPCIONES<br>ABIERTAS TODO EL AÑO</h1>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        <div class="row" >
-          <div class="col-sm-12" >
-            <div class="container">
-              <div class="row"  id="div_main2">
-                <div class="col-sm-12" style="background-color: rgba(143, 187, 78,0.5)" >
-
-                  <h1 class="text-center title_paragraph" >ESCUELA ACTIVA</h1>
-                  <h3 style="font-weight: bolder;">La primera y única escuela activa en Puerto Escondido Oaxaca, Mex.</h3>
-                  <p class="paragraph">La Escuela Activa empieza a surgir en la primera década del siglo xx, su finalidad es formar personas con sentido democrático desarrollar un espíri-tu crítico y de cooperación. El tipo de aprendizaje es comprensivo crítico y multidisciplinario y en cuestión de enseñanza se parte del respeto al alumno, planteando el proceso de enseñanza – aprendizaje a partir de las necesidades e interés de éste.</p>
-                  <a  data-toggle="collapse" href="#collapseEscuelaActiva"  role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/flecha3.png" style="width: 60px;" class="img_collapse" /></a>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-
-        <div class="row collapse" id="collapseEscuelaActiva">
-          <div class="col-sm-12" >
-            <div class="card card-body" style="background-color: rgb(143, 187, 78)">
-              <p class="paragraph_collapsed">La historia del Colegio Juan Rulfo empieza en el año de 1991. Desde nuestros inicios nos enfocamos en diseñar un proyecto de educación alternativa en Puerto Escondido Oaxaca México, es por ello que nuestra escuela siempre buscó ser una escuela activa, innovadora, inclusiva, integral y dinámica a todos los cambios que vive nuestra sociedad día a día.</p>
-              
-              <br>
-              <p class="paragraph_collapsed">
-                Buscamos formar niños (as) capaces de desarrollar habilidades que les permitan respetar su entorno natural y social para que sean ciudadanos con un pensamiento crítico, creativo y con éste transformar de la mejor manera la comunidad que les rodea. Estamos convencidos que el trabajo en equipo entre la escuela y las familias que la conforman es de gran importancia para el desarrollo óptimo de los niños (as).
-              </p>
-              <br>
-              <p class="paragraph_collapsed">
-                Las bases fundamentales de nuestro proyecto son : el constructivismo, la pedagogía crítica, la neurolinguistica y los valores que permiten hacer una sociedad más justa e igualitaria respetando la diversidad que existe en ella. 
-              </p>
-              <br>
-              <p class="paragraph_collapsed">
-                Dentro de la didáctica practicamos las "Técnicas Freinet", así como algunas de las herramientas que conforman la Pedagogía "Bosquescuela".
-              </p>
-              <br>
-              <p class="paragraph_collapsed">
-                Nuestro proyecto educativo se fundamenta en modelos pedagógicos, teorías de la enseñanza-aprendizaje desarrollados por los siguientes autores: Piaget, Gomez Palacio, Freinet, Morin, Maturana, Freire, Vigotsky, Freud, Erickson, Kolberg, From, Malaguzzi, entre los más importantes.
-              </p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="row" >
-          <div class="col-sm-12" >
-            <div class="container">
-              <div class="row" id="div_main3">
-                <div class="col-sm-12" style="background-color: rgba(50, 98, 145,0.5);" >
-                  <h1 class="text-center title_paragraph">EDUCACIÓN INCLUSIVA</h1>
-                  <h4 class="paragraph">Contamos con la infraestructura, preparación y legislación para atender niños con capacida desdiferentes.</h4>
-                  <a  data-toggle="collapse" href="#collapseEducacionInclusiva"  role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/flecha3.png" style="width: 60px;" class="img_collapse" /></a>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-
-        <div class="row collapse" id="collapseEducacionInclusiva">
-          <div class="col-sm-12" >
-            <div class="card card-body" style="background-color: rgb(50, 98, 145)">
-              <p class="paragraph_collapsed">La UNESCO define la educación inclusiva en su documento conceptual así: ¨ La inclusión se ve como el proceso de identificar y responder a la diversidad de las necesidades de todos los estudiantes a través de la mayor participación en el aprendizaje, las culturas y las comunidades, y reduciendo la exclusión en la educación. Involucra cambios y modificaciones en contenidos, aproximaciones, estructuras y estrategias, con una visión común que incluye a todos los niño/as del rango de edad apropiado y la convicción de que es la responsabilidad del sistema regular, educar a todos los niños (as)</p>
-              <br>
-              <p class="paragraph_collapsed">
-                En el Colegio Juan Rulfo sabemos que los niños (as) tienen características, intereses, capacidades y necesidades de aprendizaje diferentes, así contamos con un proyecto educativo que responde a la diversidad de dichas características y necesidades.Creemos firmemente que la escuela forma parte de la sensibilización y aceptación a dicha diversidad dentro de la sociedad, por ello contamos con el contexto pedagógico escolar, la infraestructura, la preparación y la legislación para atender a niños y niñas que lo necesiten.
-              </p>
-              <br>
-              <p class="paragraph_collapsed">
-                Sabemos que la educación forma parte de la igualdad de oportunidades para todos los niños y niñas.
-              </p>
-              <br>
-              
-
-            </div>
-          </div>
-        </div>
-
-        <div class="row" >
-          <div class="col-sm-12" >
-            <div class="container">
-              <div class="row" id="div_main4">
-                <div class="col-sm-12" style="background-color: rgba(143, 187, 78,0.5);" >
-
-                  <h1 class="text-center title_paragraph">ESCUELA VERDE</h1>
-                  
-                  <a  data-toggle="collapse" href="#collapseExample"  role="button" aria-expanded="false" aria-controls="collapseExample"><img src="images/flecha3.png" style="width: 60px;" class="img_collapse" /></a>
-                    
+                  <h1 class="bold_word" style="margin-top: 150px;font-size: 45px;">Instalaciones</h1>
                   
                 </div>
-              </div>              
-            </div>
-            
-          </div>
-        </div>
-
-        <div class="row collapse" id="collapseExample">
-          <div class="col-sm-12" >
-            <div class="card card-body" style="background-color: rgb(143, 187, 78)">
-              <p class="paragraph_collapsed">Esta demostrado que el convivir con la naturaleza los niños aprenden por descubrimiento, desarrollan su curiosidad y autonomía, adquieren valores como el respeto a toda manifestación de vida y mejoran su capacidad de atención y memoria.</p>
-              <br>
-              <br>
-              <p class="paragraph_collapsed">
-                Algunas de las actividades dentro de ella se llama “guarda arenas” donde se les educa y enseña a los menores sobre el mar, su fauna, flora y como se comporta.<br>guardarenasmx.org
-
-              </p>
-              <br>
-              <p class="paragraph_collapsed">
-                <br>Aves sin fronteras:<br>
-                El objetivo principal de este programa es de concientizar a los niños acerca de la problemática que existe en torno a las aves migratorias, las cuales constituyen un recurso natural compartido entre México y Estados Unidos. Las actividades están encamina das hacia la toma de decisiones y acciones para la conservación y protección de las aves, así como de sus hábitats naturales. Esta actividad es de suma importancia porque Puerto Escondido recibe muchas aves migratorias, es por ello que los niños necesitan conocer y asumir el compromiso de cuidar los diferentes eco sistemas de la costa.
-              </p>
-              <div class="container" style="margin-top: 20px;">
-                <div class="row">
-                  <div class="col-md-3 offset-md-2 col-sm-12">
-                    <img src="images/escuela_verde.jpg" class="images_escuela_verde" >
-                  </div>
-                  <div class="col-md-6 col-sm-12">
-                    <img src="images/escuela_verde2.jpg" class="images_escuela_verde" >
-                  </div>
-                </div>
               </div>
             </div>
-
             
           </div>
-
         </div>
+      </div>
 
+      <div class="container">
         <div class="row" >
-          <div class="col-sm-12" >
+          <div class="col-12">
             <div class="container">
-              <div class="row" id="div_main5">
-                <div class="col-sm-12" style="background-color: rgba(50, 98, 145,0.5);" >
-
-                  <h1 class="text-center title_paragraph">ROBÓTICA</h1>
-                  <h4 class="paragraph">Ofrecemos Robótica, utilizando el material de Lego Education, somos la única escuela que cuenta con todos los niveles iniciando en Preescolar, llegando a ganar lugares importantes a nivel nacional en el WRO: World Robot Olympiad - Olimpiada Mundial de Robótica.
+              <div class="row" style="background-color: white;">
+                <div class="col-sm-12">
+                  <!--<ul id="imageGallery" style="border: solid;">
+                    <li data-thumb="images/signo.png" data-src="images/signo.png">
+                      <img src="images/signo.png" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-2.jpg" data-src="img/largeImage1.jpg">
+                      <img src="images/logo.png" />
+                    </li>
+                  </ul>-->   
                 </div>
               </div>
-            </div>
-            
+              
+
+            </div>  
           </div>
         </div>
-        
       </div>
     </header>
 
@@ -571,16 +461,15 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
+    
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/lightslider.js"></script>
+    <script src="js/lightgallery.js"></script>
     <!-- Plugin JavaScript -->
     <!--<script src="vendor/jquery-easing/jquery.easing.min.js"></script>-->
     <!--<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>-->
-    <script src="js/main.js"></script>  
-
-    <!-- Custom JavaScript for this theme -->
-    <!--<script src="js/scrolling-nav.js"></script>-->
+    <script src="js/main.js"></script>
 
     <script type="text/javascript">
       
