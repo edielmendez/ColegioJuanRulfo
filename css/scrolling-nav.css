@@ -47,10 +47,12 @@
 		margin-right: 0px !important;
 	}
 	.title_paragraph{
+		font-size: 30px !important;
 		margin-top: 30px !important;
 	}
 	header{
 		padding: 0px!important;
+		margin-top: 0px !important;
 	}
 	#logo_nav{
 		width: 50px !important;
@@ -80,6 +82,15 @@
 	.images_escuela_verde{
 		width: 200px !important;
 		margin-top: 20px !important;
+	}
+	#title_instalaciones{
+		margin-top: 100px !important;
+	}
+	#row_gallery{
+		margin-top: 50px !important;
+	}
+	#section_tes_inst{
+		margin-top: 50px !important;
 	}
 
 }
