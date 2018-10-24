@@ -2,20 +2,7 @@
 
 $(document).ready(function(){
 	$('#page-loader').fadeOut(1500);
-	$('#imageGallery').lightSlider({
-        gallery:true,
-        item:1,
-        loop:true,
-        thumbItem:9,
-        slideMargin:0,
-        enableDrag: false,
-        currentPagerPosition:'left',
-        onSliderLoad: function(el) {
-            el.lightGallery({
-                selector: '#imageGallery .lslide'
-            });
-        }   
-    });
+	
 })
 
 $(document).on("click","#btn_form",function(){
@@ -54,6 +41,23 @@ $(".img_collapse").click(function(){
 
 $("#terminos_condiciones").click(function(){
 	$("#modalTerminos").modal();
+})
+
+$("#form_question_element").submit(function(){
+	$.confirm({
+	    title: '¡Atención!',
+	    content: 'Se enviará un email al Colegio Juan Rulfo',
+	    closeIcon: true,
+	    buttons: {
+	        enviar: function () {
+	            $.alert('Confirmed!');
+	        },
+	        cancelar: function () {
+	            $.alert('Canceled!');
+	        }
+	    }
+	});
+	return;
 })
 /*
 $(document).on("click", "#item_contacto", function () {

@@ -44,7 +44,7 @@
         width: 200px;
         height: auto;
         display: none;
-        background-color: #326291;
+        background-color: white;
         z-index: 10;
         margin-right: 100px;
         -webkit-border-radius: 20px 20px 20px 20px;
@@ -224,7 +224,7 @@
     <div class="fixed" id="form_question">
       <form style="padding: 10px;" >
         <div class="form-group">
-          <p class="text-center" style="color: white;"><b>¿Tienes alguna pregunta?</b></p>
+          <p class="text-center main_blue" ><b>¿Tienes alguna pregunta?</b></p>
           <!--<label for="exampleInputEmail1" class="text-center">Email address</label>-->
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre" required="">
           <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
@@ -237,14 +237,13 @@
         </div>
         <div class="form-group">
           
-          <textarea class="form-control" rows="3" id="comment" style="resize: none;"></textarea>
+          <textarea class="form-control" rows="3" id="comment" style="resize: none;" required=""></textarea>
           <!--<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
         </div>
 
         <div class="form-row text-center">
           <div class="col-12">
-              <a href="" class="main_blue" style="text-decoration: none; color: white;"><b>Enviar</b></a>
-              <!--<button type="submit" class="btn">Enviar</button>-->
+              <button type="submit" class="btn main_blue" >Enviar</button>
           </div>
        </div>
         

@@ -14,6 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="css/jquery-confirm.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <style type="text/css">
@@ -43,7 +44,7 @@
         width: 200px;
         height: auto;
         display: none;
-        background-color: #326291;
+        background-color: white;
         z-index: 10;
         margin-right: 100px;
         -webkit-border-radius: 20px 20px 20px 20px;
@@ -154,8 +155,12 @@
         border-bottom:2px solid white;
         padding-bottom:2px;
       }
+      .item_lista{
+        font-size: 25px;
+        color: #326291;
+      }
 
-      
+        
     </style>
   </head>
 
@@ -202,9 +207,9 @@
     <div id="page-loader"><span class="preloader-interior"></span></div>
 
     <div class="fixed" id="form_question">
-      <form style="padding: 10px;" >
+      <form style="padding: 10px;" id="form_question_element">
         <div class="form-group">
-          <p class="text-center" style="color: white;"><b>¿Tienes alguna pregunta?</b></p>
+          <p class="text-center main_blue" ><b>¿Tienes alguna pregunta?</b></p>
           <!--<label for="exampleInputEmail1" class="text-center">Email address</label>-->
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre" required="">
           <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
@@ -217,13 +222,13 @@
         </div>
         <div class="form-group">
           
-          <textarea class="form-control" rows="3" id="comment" style="resize: none;"></textarea>
+          <textarea class="form-control" rows="3" id="comment" style="resize: none;" required=""></textarea>
           <!--<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
         </div>
 
         <div class="form-row text-center">
           <div class="col-12">
-              <a href="" class="main_blue" style="text-decoration: none; color: white;"><b>Enviar</b></a>
+              <button type="submit" class="btn main_blue" >Enviar</button>
               <!--<button type="submit" class="btn">Enviar</button>-->
           </div>
        </div>
@@ -251,8 +256,8 @@
                 <div class="col-sm-12" style="background-color: rgba(50, 98, 145,0.5);">
                   <h1 class="bold_word" style="margin-top: 150px;font-size: 45px;" id="title_instalaciones">Admición</h1>
                   <ul>
-                    <li style="display: inline-block;"><a href="#pedagogia" class="anclas_main"><span class="menu">Proceso</span></a></li>
-                    <li style="display: inline-block;"><a href="#actividades" class="anclas_main"><span class="menu">Pagos</span></a></li>
+                    <li style="display: inline-block;"><a href="#proceso" class="anclas_main"><span class="menu">Proceso</span></a></li>
+                    <li style="display: inline-block;"><a href="#pagos" class="anclas_main"><span class="menu">Pagos</span></a></li>
                     
                   </ul>
                 </div>
@@ -267,15 +272,70 @@
         <div class="row" >
           <div class="col-12">
             <div class="container">
-              <div class="row" style="background-color: white;">
+              <div class="row" style="background-color: white;" id="proceso">
                 <div class="col-lg-12 col-sm-12">
-                  
-                  
-                    
-                  
-                   
+                  <h1 class="main_green text-center title_paragraph">Proceso</h1>
+                  <p class="paragraph main_blue text-center">Somos una escuela que para poder dar una educación de calidad solamente aceptamos 15 niños en el nivel preescolar y 20 en el nivel de primaria.</p>           
                 </div>
               </div>
+              
+              <div class="row" style="background-color: white;padding-top: 50px;">
+                <div class="col-md-3 text-center ">
+                  <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+                  <h3 class="text-center testimony_title" >Agenda Una cita</h3>
+                </div>
+                <div class="col-md-3 text-center ">
+                  <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+                  <h3 class="text-center testimony_title">Infórmate</h3>
+                </div>
+                <div class="col-md-3 text-center ">
+                  <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+                  <h3 class="text-center testimony_title">Inscríbete </h3>
+                </div>
+                <div class="col-md-3 text-center ">
+                  <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+                  <h3 class="text-center testimony_title" >Únete</h3>
+                </div>
+              </div>
+
+              <div class="row" style="background-color: white;" id="pagos">
+                <div class="col-12">
+                  <h1 class="main_green text-center title_paragraph">Pagos</h1>
+                </div>
+              </div>
+              <div class="row" style="background-color: white;">
+                <div class="col align-self-center">
+                  <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #326291;"></div>
+                  
+                </div>
+              </div>
+
+              <div class="row" style="background-color: white;">
+                <div class="col-md-6 offset-md-3">
+                  <ul>
+                    <li class="item_lista" >Inscripción</li>
+                    <li class="item_lista">2 Mensualidades correspondientes al ciclo escolar en curso</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row" style="background-color: white;">
+                <div class="col-12">
+                  <h1 class="main_green text-center title_paragraph">Pagos Anuales</h1>
+                </div>
+              </div>
+              <div class="row" style="background-color: white;">
+                <div class="col-md-7 offset-md-3">
+                  <ul>
+                    <li class="item_lista" >Seguro de accidentes escolares</li>
+                    <li class="item_lista">Robótica</li>
+                    <li class="item_lista">Paquete de Libros</li>
+                    <li class="item_lista">Uniformes</li>
+                    <li class="item_lista">Cooperación para eventos sociales internos<p style="font-size: 13px;">(Día de Muertos, Posada, Día del Niño, Día de la familia, etcétera.)</p></li>
+                  </ul>
+                </div>
+              </div>
+
               
 
             </div>  
@@ -447,7 +507,7 @@
     
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
+    <script src="js/jquery-confirm.min.js"></script>
     <!-- Plugin JavaScript -->
     <!--<script src="vendor/jquery-easing/jquery.easing.min.js"></script>-->
     <!--<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>-->
