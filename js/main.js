@@ -43,22 +43,88 @@ $("#terminos_condiciones").click(function(){
 	$("#modalTerminos").modal();
 })
 
-$("#form_question_element").submit(function(){
+$("#form_question_element").submit(function(event){
+	event.preventDefault();
 	$.confirm({
 	    title: '¡Atención!',
 	    content: 'Se enviará un email al Colegio Juan Rulfo',
 	    closeIcon: true,
 	    buttons: {
 	        enviar: function () {
-	            $.alert('Confirmed!');
+	        	var email = $("#email").val();
+	        	var nombre = $("#nombre").val();
+	        	var mensaje = $("#mensaje").val();
+	        	console.log(mensaje);
+	            var request = $.ajax({
+				    url: "server/send_mail.php",
+				    method: "POST",
+				    data: { nombre : nombre,email:email,mensaje: mensaje}
+				});
+				 
+				request.done(function( msg ) {
+					console.log(msg)
+					$("#email").val("");
+			        $("#nombre").val("");
+			        $("#mensaje").val("");
+				    $.alert(msg)
+				});
+				 
+				request.fail(function( jqXHR, textStatus ) {
+				    $.alert(textStatus)
+				});
 	        },
 	        cancelar: function () {
-	            $.alert('Canceled!');
+	            $.alert('');
 	        }
 	    }
 	});
-	return;
+	
 })
+$("#form_question_element_xs").submit(function(event){
+	event.preventDefault();
+	$.confirm({
+	    title: '¡Atención!',
+	    content: 'Se enviará un email al Colegio Juan Rulfo',
+	    closeIcon: true,
+	    buttons: {
+	        enviar: function () {
+	        	var email = $("#email2").val();
+	        	var nombre = $("#nombre2").val();
+	        	var mensaje = $("#mensaje2").val();
+	        	console.log(mensaje);
+	            var request = $.ajax({
+				    url: "server/send_mail.php",
+				    method: "POST",
+				    data: { nombre : nombre,email:email,mensaje: mensaje}
+				});
+				 
+				request.done(function( msg ) {
+					console.log(msg)
+					$("#email2").val("");
+			        $("#nombre2").val("");
+			        $("#mensaje2").val("");
+				    $.alert(msg)
+				});
+				 
+				request.fail(function( jqXHR, textStatus ) {
+					$("#email2").val("");
+			        $("#nombre2").val("");
+			        $("#mensaje2").val("");
+				    $.alert(textStatus)
+				});
+	        },
+	        cancelar: function () {
+	            $("#email2").val("");
+			    $("#nombre2").val("");
+			    $("#mensaje2").val("");
+	        }
+	    }
+	});
+
+	
+})
+
+
 /*
 $(document).on("click", "#item_contacto", function () {
     //$("#mainNav").collapse('hide');

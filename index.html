@@ -16,6 +16,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="css/jquery-confirm.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
      <!--<link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">-->
     <link href="css/scrolling-nav.css" rel="stylesheet">
@@ -206,24 +207,25 @@
     </nav>
     
     <div id="page-loader"><span class="preloader-interior"></span></div>
+    
 
     <div class="fixed" id="form_question">
-      <form style="padding: 10px;">
+      <form style="padding: 10px;" id="form_question_element">
         <div class="form-group">
           <p class="text-center main_blue"><b>¿Tienes alguna pregunta?</b></p>
           <!--<label for="exampleInputEmail1" class="text-center">Email address</label>-->
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre" required="">
+          <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Nombre" required="" id="nombre">
           <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
         </div>
         <div class="form-group">
         
           <!--<label for="exampleInputEmail1" class="text-center">Email address</label>-->
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required="">
+          <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" required="" id="email">
           <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
         </div>
         <div class="form-group">
           
-          <textarea class="form-control" rows="3" id="comment" style="resize: none;" required=""></textarea>
+          <textarea class="form-control" rows="3" style="resize: none;" required="" id="mensaje"></textarea>
           <!--<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
         </div>
 
@@ -440,39 +442,43 @@
     </section>
 
     
-      <div class="container" style="display: none;margin-bottom: 30px;"  id="form_sm">
+    <div class="container" style="display: none;margin-bottom: 30px;"  id="form_sm">
+      <form id="form_question_element_xs">
       <div class="row">
         <div class="col-12">
           <div class="form-group">
             <p class="text-center main_blue"><b>¿Tienes alguna pregunta?</b></p>
             <!--<label for="exampleInputEmail1" class="text-center">Email address</label>-->
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre" required="">
+            <input type="text" class="form-control" id="nombre2" aria-describedby="emailHelp" placeholder="Nombre" required="">
             <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
           </div>
         </div>
         <div class="col-12">
           <div class="form-group">
             <!--<label for="exampleInputEmail1" class="text-center">Email address</label>-->
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" required="">
+            <input type="email" class="form-control" id="email2" aria-describedby="emailHelp" placeholder="Email" required="">
             <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
           </div>
         </div>
         <div class="col-12">
           <div class="form-group">
         
-            <textarea class="form-control" rows="3" id="comment" style="resize: none;"></textarea>
+            <textarea class="form-control" rows="3" id="mensaje2" style="resize: none;"></textarea>
             <!--<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
           </div>
         </div>
         <div class="col-12">
           <div class="form-row text-center">
             <div class="col-12">
-                <<button type="submit"class="main_blue" style="text-decoration: none;">Enviaar</button>
+
+                <button type="submit"class="main_blue">Enviar</button>
             </div>
          </div>
         </div>
+      </form>
+    </div>
 
-      </div>
+
     </div>
     
     
@@ -575,7 +581,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/jquery-confirm.min.js"></script>
     <!-- Plugin JavaScript -->
     <!--<script src="vendor/jquery-easing/jquery.easing.min.js"></script>-->
     <!--<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>-->
