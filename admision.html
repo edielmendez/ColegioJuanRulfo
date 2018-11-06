@@ -14,6 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='css/font-awesome.min.css' rel='stylesheet'>
     <link href="css/jquery-confirm.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
@@ -192,10 +193,10 @@
               <a class="nav-link" href="instalaciones.html" style="color: white;font-size: 25px;font-weight: bold;" >Instalaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color: rgba(143,187,78,0.8);font-size: 25px;font-weight: bold;" >Admicion</a>
+              <a class="nav-link" href="#" style="color: rgba(143,187,78,0.8);font-size: 25px;font-weight: bold;" >Admisión</a>
             </li>
             <li class="nav-item" id="item_contacto" style="display: none;">
-              <a class="nav-link" href="#form_sm" style="color: white;font-size: 25px;font-weight: bold;" >Contacto</a>
+              <a class="nav-link" href="#aux" style="color: white;font-size: 25px;font-weight: bold;" >Contacto</a>
             </li>
           </ul>
         </div>
@@ -238,14 +239,17 @@
     </div>
 
     <div id="social_networks">
-      <img src="images/face.png" class="rounded-circle mx-auto d-block" style="width: 50px;height: 50px;">
+      <a href="https://www.facebook.com/colegiojuanrulfomx/"><img src="images/face.png" class="rounded-circle mx-auto d-block" style="width: 50px;height: 50px;"></a>
       <br>
       <img src="images/instagram.png" class="rounded-circle mx-auto d-block" style="width: 50px;height: 50px;">
     </div>
 
+    <a href="#top" class="btn" id="go_to_up" style="position: fixed;bottom: 10px;right:10px;background-color: white;display: none;z-index: 10;"><i class="fa fa-arrow-up" style="font-size:36px;color: #326291;"></i></a>
     
     <a href="##" id="btn_form"><img src="images/signo.png" class="rounded-circle mx-auto d-block" style="width: 80px;height: 80px;"></a>
     <br>
+
+
 
     <header class=" text-white background-main">
       <div class="container text-center" >
@@ -254,7 +258,7 @@
             <div class="container">
               <div class="row" id="div_main">
                 <div class="col-sm-12" style="background-color: rgba(50, 98, 145,0.5);">
-                  <h1 class="bold_word" style="margin-top: 150px;font-size: 45px;" id="title_instalaciones">Admición</h1>
+                  <h1 class="bold_word" style="margin-top: 150px;font-size: 45px;" id="title_instalaciones">Admisión</h1>
                   <ul>
                     <li style="display: inline-block;"><a href="#proceso" class="anclas_main"><span class="menu">Proceso</span></a></li>
                     <li style="display: inline-block;"><a href="#pagos" class="anclas_main"><span class="menu">Pagos</span></a></li>
@@ -314,7 +318,7 @@
                 <div class="col-md-6 offset-md-3">
                   <ul>
                     <li class="item_lista" >Inscripción</li>
-                    <li class="item_lista">2 Mensualidades correspondientes al ciclo escolar en curso</li>
+                    <li class="item_lista">12 Mensualidades correspondientes al ciclo escolar en curso</li>
                   </ul>
                 </div>
               </div>
@@ -349,14 +353,12 @@
         <h1 class="text-center main_blue" style="font-weight: bold;">Testimonios</h1>
         <div class="row">
           <div class="col-md-6 text-center">
-            <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
-            <!--<img src="images/user.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;">-->
-            <h3 class="text-center testimony_title" id="testimony_one">Linda Irais Méndez Cisneros </h3>
+            <img src="images/woman_icon.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;">
+            <h3 class="text-center testimony_title" id="testimony_one">Cynthia Irais Méndez Cisneros </h3>
             <!--<p class="text-center testimony_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque totam cumque accusantium repellendus, illum, libero reiciendis est, explicabo obcaecati asperiores suscipit eum? Perferendis ipsa odio maxime, ullam, iste vero! Quis!<p>-->
           </div>
-          <div class="col-md-6 text-center ">
-            <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
-            <!--<img src="images/user.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;">-->
+          <div class="col-md-6 text-center " id="aux">
+            <img src="images/men_icon.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;">
             <h3 class="text-center testimony_title" id="testimony_two">Jorge Armando Méndez Cisneros</h3>
             <!--<p class="text-center testimony_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque totam cumque accusantium repellendus, illum, libero reiciendis est, explicabo obcaecati asperiores suscipit eum? Perferendis ipsa odio maxime, ullam, iste vero! Quis!<p>-->
           </div>
@@ -370,7 +372,7 @@
     </section>
 
     
-     <div class="container" style="display: none;margin-bottom: 30px;"  id="form_sm">
+    <div class="container" style="display: none;margin-bottom: 30px;"  id="form_sm">
       <form id="form_question_element_xs">
       <div class="row">
         <div class="col-12">
@@ -403,6 +405,7 @@
             </div>
          </div>
         </div>
+      </div>
       </form>
     </div>
     
@@ -425,7 +428,7 @@
 
               
           
-      <p class="text-center" id="social_networks_sm" style="display: none;"><img src="images/face.png" style="width: 50px;height: 50px;"><img src="images/instagram.png" style="width: 50px;height: 50px;"></p>
+      <p class="text-center" id="social_networks_sm" style="display: none;"><a href="https://www.facebook.com/colegiojuanrulfomx/"><img src="images/face.png" style="width: 50px;height: 50px;"></a>a><img src="images/instagram.png" style="width: 50px;height: 50px;"></p>
             
             
           

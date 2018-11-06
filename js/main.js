@@ -14,7 +14,8 @@ $(document).on("click","#btn_form",function(){
 });
 
 
-$(document).on("click","#testimony_one",function(){
+$(document).on("click","#testimony_one",function(e){
+	
 	document.getElementById("video_testimonio").src = "video/testimonio.mp4";
 	
 	$("#modalVideo").modal();
@@ -124,7 +125,25 @@ $("#form_question_element_xs").submit(function(event){
 	
 })
 
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  
+  if (y > 1000) {
+    $("#go_to_up").fadeIn();
+  } else {
+    $("#go_to_up").fadeOut();
+  }
+});
 
+$('a[href$="top"]').click(function(){
+	
+    $('html, body').animate({scrollTop:0}, 'slow');
+});
+
+/*$('a[href$="aux"]').click(function(e){
+	console.log(e);
+    //$('html, body').animate({scrollTop:e.target.scrollWidth}, 'slow');
+});*/
 /*
 $(document).on("click", "#item_contacto", function () {
     //$("#mainNav").collapse('hide');

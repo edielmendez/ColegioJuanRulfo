@@ -14,6 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='css/font-awesome.min.css' rel='stylesheet'>
     <link href="css/jquery-confirm.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -118,30 +119,7 @@
         background-repeat: no-repeat;
         
       }
-      #div_main2{
-        background-image: url(images/main2.png);
-        height: 700px;
-        background-repeat: no-repeat;
-      }
-
-      #div_main3{
-        background-image: url(images/main3.jpg);
-        height: 500px;
-        background-repeat: no-repeat;
-      }
-
-      #div_main4{
-        background-image: url(images/main4.png);
-        height: 500px;
-        background-repeat: no-repeat;
-      }
-
-      #div_main5{
-        background-image: url(images/main5.jpg);
-        height: 500px;
-        background-repeat: no-repeat;
-        background-size: auto;
-      }
+      
       input[type="text"]:focus,input[type="email"]:focus{
         border-color: rgb(143, 187, 78);
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgb(143, 187, 78);
@@ -180,7 +158,7 @@
     </style>
   </head>
 
-  <body  >
+  <body>
 
     <!-- Navigation -->
     <!-- Navigation -->
@@ -208,10 +186,10 @@
               <a class="nav-link" href="instalaciones.html" style="color: white;font-size: 25px;font-weight: bold;">Instalaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="admicion.html" style="color: white;font-size: 25px;font-weight: bold;" >Admición</a>
+              <a class="nav-link" href="admision.html" style="color: white;font-size: 25px;font-weight: bold;" >Admisión</a>
             </li>
             <li class="nav-item" id="item_contacto" style="display: none;">
-              <a class="nav-link" href="#form_sm" style="color: white;font-size: 25px;font-weight: bold;" >Contacto</a>
+              <a class="nav-link" href="#aux" style="color: white;font-size: 25px;font-weight: bold;" >Contacto</a>
             </li>
           </ul>
         </div>
@@ -254,14 +232,15 @@
     </div>
 
     <div id="social_networks">
-      <img src="images/face.png" class="rounded-circle mx-auto d-block" style="width: 50px;height: 50px;">
-      <br>
+      <a href="https://www.facebook.com/colegiojuanrulfomx/"><img src="images/face.png" class="rounded-circle mx-auto d-block" style="width: 50px;height: 50px;"></a>
       <img src="images/instagram.png" class="rounded-circle mx-auto d-block" style="width: 50px;height: 50px;">
     </div>
 
     
     <a href="##" id="btn_form"><img src="images/signo.png" class="rounded-circle mx-auto d-block" style="width: 80px;height: 80px;"></a>
     <br>
+
+    <a href="#top" class="btn" id="go_to_up" style="position: fixed;bottom: 10px;right:10px;background-color: white;display: none;z-index: 10;"><i class="fa fa-arrow-up" style="font-size:36px;color: #326291;"></i></a>
 
     <header class=" text-white background-main">
       <div class="container text-center" >
@@ -329,19 +308,20 @@
               </div>
               <div class="row" style="background-color: white;padding-top: 100px;">
                 <div class="col-md-3 offset-md-1 text-center">
-                  <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+                  <!--<div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>-->
+                  <img src="images/english_icon.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;padding:10px;background-color: #8FBB4E;">
                   <h3 class="text-center testimony_title" >Ingles</h3>
                   <p class="text-center" style="color: black;">Lic. Amando Gabriel<p>
                   <p class="text-center" style="color: black;">Lic. Esmeralda Antonio<p> 
                 </div>
                 <div class="col-md-4 text-center">
-                  <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+                  <img src="images/danza_icon.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;padding:10px;background-color: #8FBB4E;">
                   <h3 class="text-center testimony_title">Danza</h3>
                   <p class="text-center" style="color: black;">Lic. Lucino Nava<p>
                   
                 </div>
                 <div class="col-md-3 text-center">
-                  <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+                  <img src="images/arte_icon.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;padding:10px;background-color: #8FBB4E;">
                   <h3 class="text-center testimony_title" >Artes</h3>
                   <p class="text-center" style="color: black;">Lic. Santiago Pablo<p>
                   
@@ -350,7 +330,7 @@
 
               <div class="row" style="background-color: white;padding-top: 100px;">
                 <div class="col-md-3 offset-md-1 text-center">
-                  <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+                  <img src="images/computer_icon.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;padding:10px;background-color: #8FBB4E;">
                   <h3 class="text-center testimony_title" >Computación</h3>
                   
                 </div>
@@ -463,12 +443,12 @@
 
               <div class="row" style="background-color: white;padding-top: 100px;">
                 <div class="offset-md-3 col-md-3 text-center">
-                  <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+                  <img src="images/enfermeria_icon.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;padding:10px;background-color: #8FBB4E;">
                   <h3 class="text-center testimony_title" >Enfermera</h3>
                   <p class="text-center" style="color: black;">Lic. Daniela Hernández<p>
                 </div>
                 <div class="col-md-4 text-center">
-                  <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
+                  <img src="images/psicologia_icon.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;padding:10px;background-color: #8FBB4E;">
                   <h3 class="text-center" style="color: blue;"></h3>
                   <h3 class="text-center testimony_title" >Psicóloga</h3>
                   <p class="text-center" style="color: black;">Lic. Salma Ortiz<p>
@@ -483,26 +463,22 @@
     </header>
 
     <section>
-      <div class="container">
+      <div class="container" >
         <h1 class="text-center main_blue" style="font-weight: bold;">Testimonios</h1>
         <div class="row">
           <div class="col-md-6 text-center">
-            <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
-            <!--<img src="images/user.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;">-->
-            <h3 class="text-center testimony_title" id="testimony_one">Linda Irais Méndez Cisneros </h3>
-            <!--<p class="text-center testimony_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque totam cumque accusantium repellendus, illum, libero reiciendis est, explicabo obcaecati asperiores suscipit eum? Perferendis ipsa odio maxime, ullam, iste vero! Quis!<p>-->
+            <!--<div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>-->
+            <img src="images/woman_icon.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;">
+            <h3 class="text-center testimony_title" id="testimony_one">Cynthia Irais Méndez Cisneros </h3>
+            
           </div>
-          <div class="col-md-6 text-center ">
-            <div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>
-            <!--<img src="images/user.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;">-->
+          <div class="col-md-6 text-center " id="aux">
+            <!--<div class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;"></div>-->
+            <img src="images/men_icon.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;background-color: #8FBB4E;">
             <h3 class="text-center testimony_title" id="testimony_two">Jorge Armando Méndez Cisneros</h3>
-            <!--<p class="text-center testimony_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque totam cumque accusantium repellendus, illum, libero reiciendis est, explicabo obcaecati asperiores suscipit eum? Perferendis ipsa odio maxime, ullam, iste vero! Quis!<p>-->
+            
           </div>
-          <!--<div class="col-md-4 text-center">
-            <img src="images/user.png" class="rounded-circle mx-auto d-block" style="width: 100px;height: 100px;">
-            <h3 class="text-center testimony_title">Carolina Gal</h3>
-            <p class="text-center testimony_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque totam cumque accusantium repellendus, illum, libero reiciendis est, explicabo obcaecati asperiores suscipit eum? Perferendis ipsa odio maxime, ullam, iste vero! Quis!<p>
-          </div>-->
+          
         </div>
       </div>
     </section>
@@ -541,6 +517,7 @@
             </div>
          </div>
         </div>
+      </div>
       </form>
     </div>
     
@@ -563,7 +540,7 @@
 
               
           
-      <p class="text-center" id="social_networks_sm" style="display: none;"><img src="images/face.png" style="width: 50px;height: 50px;"><img src="images/instagram.png" style="width: 50px;height: 50px;"></p>
+      <p class="text-center" id="social_networks_sm" style="display: none;"><a href="https://www.facebook.com/colegiojuanrulfomx/"><img src="images/face.png" style="width: 50px;height: 50px;"></a><img src="images/instagram.png" style="width: 50px;height: 50px;"></p>
             
             
           
@@ -652,24 +629,7 @@
     <!--<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>-->
     <script src="js/main.js"></script>
 
-    <script type="text/javascript">
-      
-
-      $('.carousel').carousel({
-        interval: 2000
-      })
-
-      
-
-      
-
-      
-
-
-     
-
-      
-    </script>
+    
 
   </body>
 
